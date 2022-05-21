@@ -17,7 +17,7 @@ application {
     mainClass = 'hexlet.code.App'
 }
 compileJava {
-    options.release = 17
+    options.release = 17c
 }
 repositories {
     // Use Maven Central for resolving dependencies.

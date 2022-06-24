@@ -4,7 +4,7 @@ import hexlet.code.Engine;
 import hexlet.code.Utils;
 
 public class Even {
-    public static final int MAX_NUMBER = 98;
+    public static final int MAX_NUMBER = 89;
 
     public static void evenGame() {
 

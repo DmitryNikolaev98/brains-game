@@ -15,6 +15,7 @@ public class App {
                 1 - Greet\s
                 2 - Even\s
                 3 - Calc\s
+                4 - GCD\s
                 0 - Exit\s
                 Your choice:\s """);
 

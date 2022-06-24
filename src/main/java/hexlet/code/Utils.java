@@ -15,4 +15,8 @@ public class Utils {
         int i = random.nextInt(3);
         return operators[i];
     }
+
+    public static  int gcd(int a, int b) {
+        return b == 0 ? a : gcd(b, a % b);
+    }
 }

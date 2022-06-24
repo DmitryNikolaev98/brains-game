@@ -6,8 +6,10 @@ public class Engine {
     public static final int NUMBER_OF_ROUNDS = 3;
     public static final int QUESTION_NUMBER = 0;
     public static final int ANSWER_NUMBER = 1;
+    public static final int AMOUNT_QUESTION = 2;
 
-    public static void startGame(String description, String[][] answerAndQuestion) {
+
+    public static void startGame(String description, String[][] askAndQuestion) {
 
         // Приветсвие
         Scanner scanner = new Scanner(System.in);
@@ -21,23 +23,22 @@ public class Engine {
         int count = 0;
         for (int i = 0; i < NUMBER_OF_ROUNDS; i++) {
 
-            System.out.println("Question: " + answerAndQuestion[i][Engine.QUESTION_NUMBER] + "\n" +
+            System.out.println("Question: " + askAndQuestion[i][Engine.QUESTION_NUMBER] + "\n" +
                                "Your answer: ");
             String userAnswer = scanner.next();
 
-            if (userAnswer.equals(answerAndQuestion[i][Engine.ANSWER_NUMBER])) {
+            if (userAnswer.equals(askAndQuestion[i][Engine.ANSWER_NUMBER])) {
                 System.out.println("Correct!");
             } else {
-                System.out.println("'" + userAnswer + "' is wrong answer ;(. Correct answer was" + answerAndQuestion[i][Engine.ANSWER_NUMBER] + ".\n" +
+                System.out.println("'" + userAnswer + "' is wrong answer ;(. Correct answer was " + "'" + askAndQuestion[i][Engine.ANSWER_NUMBER] + "'" + ".\n" +
                                    "Let's try again, " + userName + "!");
                 break;
             }
             count++;
         }
         // Поздравление
-        switch (count) {
-            case 3:
-                System.out.println("Congratulations, " + userName + "!");
+        if (count == 3) {
+            System.out.println("Congratulations, " + userName + "!");
         }
     }
 }

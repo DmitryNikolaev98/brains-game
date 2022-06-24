@@ -4,3 +4,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
 [GameEven](https://asciinema.org/a/KQPEhpZJvx4MBK3TvFGmyaDTq) 
+
+[GameCalc](https://asciinema.org/a/OZDMH9Yj04o2o6LE9slJCFcT1)

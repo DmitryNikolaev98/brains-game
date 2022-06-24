@@ -6,7 +6,13 @@ public class Utils {
 
     public static int generateRandomNumber(int numberMax) {
         Random random = new Random();
-        int randomNumber = (int) random.nextInt(numberMax) + 1;
-        return randomNumber;
+        return random.nextInt(numberMax) + 1;
+    }
+
+    public static String generateOperator() {
+        String[] operators = {"+", "-", "*"};
+        Random random = new Random();
+        int i = random.nextInt(3);
+        return operators[i];
     }
 }

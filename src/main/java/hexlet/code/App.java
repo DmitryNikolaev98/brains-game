@@ -2,7 +2,7 @@ package hexlet.code;
 
 import hexlet.code.game.Calc;
 import hexlet.code.game.Even;
-import hexlet.code.game.GCD;
+import hexlet.code.game.Gcd;
 
 import java.util.Scanner;
 
@@ -16,6 +16,7 @@ public class App {
                 2 - Even\s
                 3 - Calc\s
                 4 - GCD\s
+                5 - Progression\s
                 0 - Exit\s
                 Your choice:\s """);
 
@@ -24,16 +25,14 @@ public class App {
         switch (number) {
             case 1:
                 Cli.greeting();
-                break;
             case 2:
                 Even.evenGame();
-                break;
             case 3:
                 Calc.calcGame();
-                break;
             case 4:
-                GCD.gcdGame();
-                break;
+                Gcd.gcdGame();
+            case 5:
+                Progression.progressionGame();
             case 0:
         }
     }

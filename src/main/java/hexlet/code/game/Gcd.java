@@ -3,7 +3,7 @@ package hexlet.code.game;
 import hexlet.code.Engine;
 import hexlet.code.Utils;
 
-public class GCD {
+public class Gcd {
 
     public static final int MAX_RANDOM_NUMBER = 89;
 
@@ -18,10 +18,14 @@ public class GCD {
             int expression2 = Utils.generateRandomNumber(MAX_RANDOM_NUMBER);
 
             askAndQuestion[i][Engine.QUESTION_NUMBER] = expression1 + " " + expression2;
-            askAndQuestion[i][Engine.ANSWER_NUMBER] = String.valueOf(Utils.gcd(expression1, expression2));
+            askAndQuestion[i][Engine.ANSWER_NUMBER] = String.valueOf(gcd(expression1, expression2));
         }
 
         Engine.startGame(description, askAndQuestion);
 
     }
+    public static int gcd(int a, int b) {
+        return b == 0 ? a : gcd(b, a % b);
+    }
+
 }

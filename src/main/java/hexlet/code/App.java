@@ -15,7 +15,7 @@ public class App {
                 3 - Calc\s
                 4 - GCD\s
                 5 - Progression\s
-                5 - Prime\s
+                6 - Prime\s
                 0 - Exit\s
                 Your choice:\s """);
 

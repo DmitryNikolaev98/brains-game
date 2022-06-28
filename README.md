@@ -10,3 +10,5 @@
 [Game GCD](https://asciinema.org/a/w2w76HPIHAhLcjR1xbdy7hQQe)
 
 [Game Progression]( https://asciinema.org/a/dEUHCwITYCRBhpGIiJTaqYXiA)
+
+[Game Prime]( https://asciinema.org/a/idudCw1eWZLYtbcfrtgxJGdzQ)

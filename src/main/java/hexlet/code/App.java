@@ -3,6 +3,7 @@ package hexlet.code;
 import hexlet.code.game.Calc;
 import hexlet.code.game.Even;
 import hexlet.code.game.Gcd;
+import hexlet.code.game.Progression;
 
 import java.util.Scanner;
 

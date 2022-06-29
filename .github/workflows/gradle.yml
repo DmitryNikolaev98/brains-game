@@ -15,3 +15,6 @@ jobs:
           java-version: '17'
       - name: Build with Gradle
         run: ./gradlew build
+
+      - name: Make gradlew executable
+        run: chmod +ux ./gradlew

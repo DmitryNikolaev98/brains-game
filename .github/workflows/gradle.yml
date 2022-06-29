@@ -16,4 +16,4 @@ jobs:
       - name: Build with Gradle
         run: make build
       - name: Make gradlew executable
-        run: chmod +x ./gradlew
+        run: chmod +x make run-dist

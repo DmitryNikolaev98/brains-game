@@ -13,7 +13,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: 17
-          distribution: 'temurin'
+          distribution: 'adopt'
       - name: Build with Gradle
         run: ./gradlew build
       - name: Make gradlew executable

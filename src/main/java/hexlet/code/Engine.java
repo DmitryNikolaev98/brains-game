@@ -13,8 +13,8 @@ public class Engine {
 
         // Приветсвие
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Welcome to the Brain Games!\n" +
-                           "May I have your name? ");
+        System.out.println("Welcome to the Brain Games!\n"
+                          + "May I have your name? ");
         String userName = scanner.next();
         System.out.println("Hello, " + userName + "!");
         System.out.println(description);
@@ -23,15 +23,16 @@ public class Engine {
         int count = 0;
         for (int i = 0; i < NUMBER_OF_ROUNDS; i++) {
 
-            System.out.println("Question: " + askAndQuestion[i][Engine.QUESTION_NUMBER] + "\n" +
-                               "Your answer: ");
+            System.out.println("Question: " + askAndQuestion[i][Engine.QUESTION_NUMBER] + "\n"
+                               + "Your answer: ");
             String userAnswer = scanner.next();
 
             if (userAnswer.equals(askAndQuestion[i][Engine.ANSWER_NUMBER])) {
                 System.out.println("Correct!");
             } else {
-                System.out.println("'" + userAnswer + "' is wrong answer ;(. Correct answer was " + "'" + askAndQuestion[i][Engine.ANSWER_NUMBER] + "'" + ".\n" +
-                                   "Let's try again, " + userName + "!");
+                System.out.println("'" + userAnswer + "' is wrong answer ;(. Correct answer was " 
+                                   + "'" + askAndQuestion[i][Engine.ANSWER_NUMBER] + "'" + ".\n"
+                                   + "Let's try again, " + userName + "!");
                 break;
             }
             count++;

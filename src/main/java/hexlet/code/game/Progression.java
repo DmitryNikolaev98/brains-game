@@ -26,13 +26,11 @@ public class Progression {
             String[] numbers = new String[LENGTH_PROGRESSION];
 
             for (int j = 0; j < LENGTH_PROGRESSION; j++) {
-                
-                numbers[j] = String.valueOf( startProgressionGame + (j * stepProgressionGame));
+                numbers[j] = String.valueOf(startProgressionGame + (j * stepProgressionGame));
                 rowNumberProgression[j] = (j == hiddenNumber) ? ".. " : ((numbers[j]) + " ");
                 rowProgression[i] += rowNumberProgression[j];
                 askAndQuestion[i][Engine.ANSWER_NUMBER] = String.valueOf(numbers[hiddenNumber]);
                 askAndQuestion[i][Engine.QUESTION_NUMBER] = rowProgression[i];
-                
             }
 
         }

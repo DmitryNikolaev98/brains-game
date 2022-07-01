@@ -13,8 +13,10 @@ public class Even {
         String[][] answerAndQuestion = new String[Engine.NUMBER_OF_ROUNDS][Engine.AMOUNT_QUESTION];
 
         for (int i = 0; i < Engine.NUMBER_OF_ROUNDS; i++) {
-            answerAndQuestion[i][Engine.QUESTION_NUMBER] = String.valueOf(Utils.generateRandomNumber(MAX_NUMBER));
-            answerAndQuestion[i][Engine.ANSWER_NUMBER] = Even.isEven(Integer.parseInt(answerAndQuestion[i][Engine.QUESTION_NUMBER]));
+            answerAndQuestion[i][Engine.QUESTION_NUMBER]
+                    = String.valueOf(Utils.generateRandomNumber(MAX_NUMBER));
+            answerAndQuestion[i][Engine.ANSWER_NUMBER]
+                    = Even.isEven(Integer.parseInt(answerAndQuestion[i][Engine.QUESTION_NUMBER]));
         }
 
         Engine.startGame(description, answerAndQuestion);

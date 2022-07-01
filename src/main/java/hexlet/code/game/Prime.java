@@ -18,7 +18,8 @@ public class Prime {
             int randomNumber = Utils.generateRandomNumber(MAX_RANDOM_NUMBER);
 
             askAndQuestion[i][Engine.QUESTION_NUMBER] = String.valueOf(randomNumber);
-            askAndQuestion[i][Engine.ANSWER_NUMBER] = isPrime(Integer.parseInt(askAndQuestion[i][Engine.QUESTION_NUMBER]));
+            askAndQuestion[i][Engine.ANSWER_NUMBER]
+                    = isPrime(Integer.parseInt(askAndQuestion[i][Engine.QUESTION_NUMBER]));
 
         }
 

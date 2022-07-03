@@ -32,12 +32,12 @@ public class App {
         int number = scanner.nextInt();
 
         switch (number) {
-            case one -> Cli.greeting();
-            case two -> Even.evenGame();
-            case three -> Calc.calcGame();
-            case four -> Gcd.gcdGame();
-            case fife -> Progression.progressionGame();
-            case six -> Prime.primeGame();
+            case 1 -> Cli.greeting();
+            case 2 -> Even.evenGame();
+            case 3 -> Calc.calcGame();
+            case 4 -> Gcd.gcdGame();
+            case 5 -> Progression.progressionGame();
+            case 6 -> Prime.primeGame();
             default -> System.exit(0);
         }
     }

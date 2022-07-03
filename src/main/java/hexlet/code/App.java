@@ -9,12 +9,12 @@ import hexlet.code.game.Progression;
 import java.util.Scanner;
 
 public class App {
-    final int one = 1;
-    final int two = 2;
-    final int three = 3;
-    final int four = 4;
-    final int fife = 5;
-    final int six = 6;
+    public static final int 1;
+    public static final int 2;
+    public static final int 3;
+    public static final int 4;
+    public static final int 5;
+    public static final int 6;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

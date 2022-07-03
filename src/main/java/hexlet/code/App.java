@@ -9,6 +9,12 @@ import hexlet.code.game.Progression;
 import java.util.Scanner;
 
 public class App {
+    final int one = 1;
+    final int two = 2;
+    final int three = 3;
+    final int four = 4;
+    final int fife = 5;
+    final int six = 6;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -26,12 +32,12 @@ public class App {
         int number = scanner.nextInt();
 
         switch (number) {
-            case 1 -> Cli.greeting();
-            case 2 -> Even.evenGame();
-            case 3 -> Calc.calcGame();
-            case 4 -> Gcd.gcdGame();
-            case 5 -> Progression.progressionGame();
-            case 6 -> Prime.primeGame();
+            case one -> Cli.greeting();
+            case two -> Even.evenGame();
+            case three -> Calc.calcGame();
+            case four -> Gcd.gcdGame();
+            case fife -> Progression.progressionGame();
+            case six -> Prime.primeGame();
             default -> System.exit(0);
         }
     }

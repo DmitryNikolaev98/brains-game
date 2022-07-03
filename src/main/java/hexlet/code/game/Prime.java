@@ -11,9 +11,9 @@ public class Prime {
 
         String description = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
 
-        String[][] askAndQuestion = new String[Engine.NUMBER_OF_ROUNDS][Engine.AMOUNT_QUESTION];
+        String[][] askAndQuestion = new String[Engine.NUMBER_ROUNDS][Engine.AMOUNT_QUESTION];
 
-        for (int i = 0; i < Engine.NUMBER_OF_ROUNDS; i++) {
+        for (int i = 0; i < Engine.NUMBER_ROUNDS; i++) {
 
             int randomNumber = Utils.generateRandomNumber(MAX_RANDOM_NUMBER);
 

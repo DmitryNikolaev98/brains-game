@@ -14,9 +14,9 @@ public class Progression {
 
         String description = "What number is missing in the progression?";
 
-        String[][] askAndQuestion = new String[Engine.NUMBER_OF_ROUNDS][Engine.AMOUNT_QUESTION];
+        String[][] askAndQuestion = new String[Engine.NUMBER_ROUNDS][Engine.AMOUNT_QUESTION];
 
-        for (int i = 0; i < Engine.NUMBER_OF_ROUNDS; i++) {
+        for (int i = 0; i < Engine.NUMBER_ROUNDS; i++) {
 
             int startProgressionGame = Utils.generateRandomNumber(MAX_RANDOM_NUMBER);
             int stepProgressionGame = Utils.differanceMaxAndMin(MAX_STEP, MIN_STEP);

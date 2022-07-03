@@ -10,9 +10,9 @@ public class Even {
 
         String description = "Answer 'yes' if the number is even, otherwise answer 'no'.";
 
-        String[][] answerAndQuestion = new String[Engine.NUMBER_OF_ROUNDS][Engine.AMOUNT_QUESTION];
+        String[][] answerAndQuestion = new String[Engine.NUMBER_ROUNDS][Engine.AMOUNT_QUESTION];
 
-        for (int i = 0; i < Engine.NUMBER_OF_ROUNDS; i++) {
+        for (int i = 0; i < Engine.NUMBER_ROUNDS; i++) {
             answerAndQuestion[i][Engine.QUESTION_NUMBER]
                     = String.valueOf(Utils.generateRandomNumber(MAX_NUMBER));
             answerAndQuestion[i][Engine.ANSWER_NUMBER]

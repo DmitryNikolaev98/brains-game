@@ -35,12 +35,11 @@ public class Engine {
                                    + "Let's try again, " + userName + "!");
                 break;
             }
-            //count++;
+            
+            // Поздравление
+            if (i == 2) {
+                System.out.println("Congratulations, " + userName + "!");
+            }
         }
-        // Поздравление
-        //if (count == 3) {
-            System.out.println("Congratulations, " + userName + "!");
-        //
-        // }
     }
 }

@@ -17,7 +17,6 @@ public class App {
         final int gameNumberGcd = 4;
         final int gameNumberPrime = 5;
         final int gameNumberProgression = 6;
-        
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("""

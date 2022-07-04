@@ -26,7 +26,6 @@ public class App {
         System.out.println("5 - Progression");
         System.out.println("6 - Prime");
         System.out.println("Your choice:");
-        
         int number = scanner.nextInt();
         switch (number) {
             case greet -> Cli.greeting();

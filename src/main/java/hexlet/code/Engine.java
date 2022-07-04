@@ -35,7 +35,7 @@ public class Engine {
                 break;
             }
             if (i == 2) {
-                System.out.println("Congratulations, " + userName + "!");// Поздравление
+                System.out.println("Congratulations, " + userName + "!");
             }
         }
     }

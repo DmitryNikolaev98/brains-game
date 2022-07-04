@@ -18,7 +18,6 @@ public class App {
         final int progression = 5;
         final int prime = 6;
         Scanner scanner = new Scanner(System.in);
-        
         System.out.println("Please enter the game number and press Enter.");
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
@@ -29,7 +28,6 @@ public class App {
         System.out.println("Your choice:");
         
         int number = scanner.nextInt();
-        //выбор игры
         switch (number) {
             case greet -> Cli.greeting();
             case even -> Even.evenGame();

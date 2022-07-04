@@ -11,7 +11,15 @@ import java.util.Scanner;
 public class App {
 
     public static void main(String[] args) {
+        final int greet = 1;
+        final int even = 2;
+        final int calc = 3;
+        final int GCD = 4;
+        final int progression = 5;
+        final int prime = 6;
+        
         Scanner scanner = new Scanner(System.in);
+        
         System.out.println("Please enter the game number and press Enter.");
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
@@ -20,8 +28,9 @@ public class App {
         System.out.println("5 - Progression");
         System.out.println("6 - Prime");
         System.out.println("Your choice:");
+        
         int number = scanner.nextInt();
-
+        //выбор игры
         switch (number) {
             case 1 -> Cli.greeting();
             case 2 -> Even.evenGame();

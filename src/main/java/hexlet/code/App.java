@@ -11,12 +11,13 @@ import java.util.Scanner;
 public class App {
 
     public static void main(String[] args) {
-        final int one = 1;
-        final int two = 2;
-        final int three = 3;
-        final int four = 4;
-        final int fife = 5;
-        final int six = 6;
+        final int gameNumberCli = 1;
+        final int gameNumberCalc = 2;
+        final int gameNumberEven = 3;
+        final int gameNumberGcd = 4;
+        final int gameNumberPrime = 5;
+        final int gameNumberProgression = 6;
+        
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("""

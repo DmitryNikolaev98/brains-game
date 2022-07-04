@@ -34,10 +34,8 @@ public class Engine {
                                    + "Let's try again, " + userName + "!");
                 break;
             }
-            
-            // Поздравление
             if (i == 2) {
-                System.out.println("Congratulations, " + userName + "!");
+                System.out.println("Congratulations, " + userName + "!");// Поздравление
             }
         }
     }

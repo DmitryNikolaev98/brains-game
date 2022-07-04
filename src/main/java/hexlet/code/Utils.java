@@ -10,9 +10,10 @@ public class Utils {
     }
 
     public static String generateOperator() {
+        final int randomOperator = 3;
         String[] operators = {"+", "-", "*"};
         Random random = new Random();
-        int i = random.nextInt(3);
+        int i = random.nextInt(randomOperator);
         return operators[i];
     }
 

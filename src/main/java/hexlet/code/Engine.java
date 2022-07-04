@@ -20,7 +20,6 @@ public class Engine {
         System.out.println(description);
 
         // Вопросы
-        //int count = 0;
         for (int i = 0; i < NUMBER_ROUNDS; i++) {
 
             System.out.println("Question: " + askAndQuestion[i][Engine.QUESTION_NUMBER] + "\n"
@@ -30,15 +29,13 @@ public class Engine {
             if (userAnswer.equals(askAndQuestion[i][Engine.ANSWER_NUMBER])) {
                 System.out.println("Correct!");
             } else {
-                System.out.println("'" + userAnswer + "' is wrong answer ;(. Correct answer was " 
+                System.out.println("'" + userAnswer + "' is wrong answer ;(. Correct answer was "
                                    + "'" + askAndQuestion[i][Engine.ANSWER_NUMBER] + "'" + ".\n"
                                    + "Let's try again, " + userName + "!");
                 break;
             }
-            
-            // Поздравление
-            if (i == 2) {
-                System.out.println("Congratulations, " + userName + "!");
+            if (i == 2) { 
+                System.out.println("Congratulations, " + userName + "!"); // Поздравление
             }
         }
     }

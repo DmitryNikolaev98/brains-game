@@ -14,10 +14,9 @@ public class App {
         final int greet = 1;
         final int even = 2;
         final int calc = 3;
-        final int GCD = 4;
+        final int gcd = 4;
         final int progression = 5;
         final int prime = 6;
-        
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("Please enter the game number and press Enter.");
@@ -32,12 +31,12 @@ public class App {
         int number = scanner.nextInt();
         //выбор игры
         switch (number) {
-            case 1 -> Cli.greeting();
-            case 2 -> Even.evenGame();
-            case 3 -> Calc.calcGame();
-            case 4 -> Gcd.gcdGame();
-            case 5 -> Progression.progressionGame();
-            case 6 -> Prime.primeGame();
+            case greet -> Cli.greeting();
+            case even -> Even.evenGame();
+            case calc -> Calc.calcGame();
+            case gcd -> Gcd.gcdGame();
+            case progression -> Progression.progressionGame();
+            case prime -> Prime.primeGame();
             default -> System.exit(0);
         }
     }

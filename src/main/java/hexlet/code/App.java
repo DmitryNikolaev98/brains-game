@@ -19,9 +19,8 @@ public class App {
         System.out.println("4 - GCD");
         System.out.println("5 - Progression");
         System.out.println("6 - Prime");
-        System.out.println("Your choice:")
+        System.out.println("Your choice:");
         String number = scanner.next();
-        
         switch (number) {
             case "1" -> Cli.greeting();
             case "2" -> Even.evenGame();

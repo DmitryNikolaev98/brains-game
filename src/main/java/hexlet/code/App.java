@@ -30,5 +30,6 @@ public class App {
             case "6" -> Prime.primeGame();
             default -> System.exit(0);
         }
+        scanner.close();
     }
 }

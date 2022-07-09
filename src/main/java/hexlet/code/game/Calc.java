@@ -3,6 +3,8 @@ package hexlet.code.game;
 import hexlet.code.Engine;
 import hexlet.code.Utils;
 
+import java.util.Random;
+
 public class Calc {
 
     public static final int MAX_RANDOM_NUMBER = 25;
@@ -17,7 +19,7 @@ public class Calc {
             int expression1 = Utils.generateRandomNumber(MAX_RANDOM_NUMBER);
             int expression2 = Utils.generateRandomNumber(MAX_RANDOM_NUMBER);
 
-            String operators = String.valueOf(Utils.generateOperator());
+            String operators = String.valueOf(Calc.generateOperator());
 
             switch (operators) {
                 case "+" -> {
@@ -40,5 +42,13 @@ public class Calc {
 
         Engine.startGame(description, askAndQuestion);
 
+    }
+
+    public static String generateOperator() {
+        final int randomOperator = 3;
+        String[] operators = {"+", "-", "*"};
+        Random random = new Random();
+        int i = random.nextInt(randomOperator);
+        return operators[i];
     }
 }

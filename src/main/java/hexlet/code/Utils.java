@@ -9,13 +9,6 @@ public class Utils {
         return random.nextInt(numberMax) + 1;
     }
 
-    public static String generateOperator() {
-        final int randomOperator = 3;
-        String[] operators = {"+", "-", "*"};
-        Random random = new Random();
-        int i = random.nextInt(randomOperator);
-        return operators[i];
-    }
 
     public static int differanceMaxAndMin(int max, int min) {
         Random random = new Random();

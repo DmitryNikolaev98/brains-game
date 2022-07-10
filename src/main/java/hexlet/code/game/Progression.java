@@ -3,6 +3,8 @@ package hexlet.code.game;
 import hexlet.code.Engine;
 import hexlet.code.Utils;
 
+import java.util.Random;
+
 public class Progression {
 
     public static final int MAX_RANDOM_NUMBER = 89;
@@ -19,7 +21,7 @@ public class Progression {
         for (int i = 0; i < Engine.NUMBER_ROUNDS; i++) {
 
             int startProgressionGame = Utils.generateRandomNumber(MAX_RANDOM_NUMBER);
-            int stepProgressionGame = Utils.differanceMaxAndMin(MAX_STEP, MIN_STEP);
+            int stepProgressionGame = Progression.differanceMaxAndMin(MAX_STEP, MIN_STEP);
             String[] rowNumberProgression = new String[LENGTH_PROGRESSION];
             String[] rowProgression = {"", "", ""};
             int hiddenNumber = Utils.anyNumber(LENGTH_PROGRESSION - 1);
@@ -35,5 +37,10 @@ public class Progression {
 
         }
         Engine.startGame(description, askAndQuestion);
+    }
+
+    public static int differanceMaxAndMin(int max, int min) {
+        Random random = new Random();
+        return random.nextInt(max - min) + min;
     }
 }

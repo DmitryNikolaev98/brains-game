@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class Calc {
 
-    public static final int MAX_RANDOM_NUMBER = 25;
+    public static final int MAX_RANDOM_NUMBER = 15;
 
     public static void calcGame() {
 
@@ -41,6 +41,9 @@ public class Calc {
         }
 
         Engine.startGame(description, askAndQuestion);
+
+    }
+    public static  void  calculate() {
 
     }
 

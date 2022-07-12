@@ -34,9 +34,7 @@ public class Engine {
                                    + "Let's try again, " + userName + "!");
                 break;
             }
-            if (i == 2) {
-                System.out.println("Congratulations, " + userName + "!");
-            }
         }
+         System.out.println("Congratulations, " + userName + "!");
     }
 }

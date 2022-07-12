@@ -8,19 +8,14 @@ import java.util.Random;
 public class Calc {
 
     public static final int MAX_RANDOM_NUMBER = 15;
-    public static String[][] askAndQuestion = new String[Engine.NUMBER_ROUNDS][Engine.AMOUNT_QUESTION];
+    public static final String[][] askAndQuestion = new String[Engine.NUMBER_ROUNDS][Engine.AMOUNT_QUESTION];
 
     public static void calcGame() {
-        
         String description = "Welcome to the Brain Games!";
-        
         Calc.calculate();
-        
         Engine.startGame(description, askAndQuestion);
-        
     }
     public static void calculate() {
-        
         for (int i = 0; i < Engine.NUMBER_ROUNDS; i++) {
             int randomNumberOne = Utils.generateRandomNumber(MAX_RANDOM_NUMBER);
             int randomNumberTwo = Utils.generateRandomNumber(MAX_RANDOM_NUMBER);

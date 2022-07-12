@@ -12,7 +12,6 @@ public class Calc {
     public static void calcGame() {
         String description = "Welcome to the Brain Games!";
         String[][] askAndQuestion = new String[Engine.NUMBER_ROUNDS][Engine.AMOUNT_QUESTION];
-        
         for (int i = 0; i < Engine.NUMBER_ROUNDS; i++) {
             int randomNumberOne = Utils.generateRandomNumber(MAX_RANDOM_NUMBER);
             int randomNumberTwo = Utils.generateRandomNumber(MAX_RANDOM_NUMBER);
@@ -37,7 +36,6 @@ public class Calc {
                 }
             }
         }
-        
         Engine.startGame(description, askAndQuestion);
     }
 

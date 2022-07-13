@@ -26,7 +26,6 @@ public class Engine {
                 System.out.println("'" + userAnswer + "' is wrong answer ;(. Correct answer was "
                                    + "'" + askAndQuestion[i][Engine.ANSWER_NUMBER] + "'" + ".\n"
                                    + "Let's try again, " + userName + "!");
-                break;
             }
         }
         System.out.println("Congratulations, " + userName + "!");

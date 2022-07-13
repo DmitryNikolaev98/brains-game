@@ -6,20 +6,16 @@ import hexlet.code.Utils;
 import java.util.Random;
 
 public class Calc {
-
     public static final int MAX_RANDOM_NUMBER = 15;
     public static String[][] askAndQuestion = new String[Engine.NUMBER_ROUNDS][];
-
     public static void game() {
         String description = "Welcome to the Brain Games!";
-
         for (int i = 0; i < Engine.NUMBER_ROUNDS; i++) {
             String operators = String.valueOf(Calc.generateOperator());
             calculate(operators, i);
         }
         Engine.startGame(description, askAndQuestion);
     }
-
     public static void calculate(String operators, int i) {
         int expression1 = Utils.generateRandomNumber(MAX_RANDOM_NUMBER);
         int expression2 = Utils.generateRandomNumber(MAX_RANDOM_NUMBER);

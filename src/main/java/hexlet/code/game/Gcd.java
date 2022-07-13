@@ -11,7 +11,7 @@ public class Gcd {
 
         String description = "Find the greatest common divisor of given numbers.";
 
-        String[][] askAndQuestion = new String[Engine.NUMBER_ROUNDS][Engine.AMOUNT_QUESTION];
+        String[][] askAndQuestion = new String[Engine.NUMBER_ROUNDS][2];
 
         for (int i = 0; i < Engine.NUMBER_ROUNDS; i++) {
             int expression1 = Utils.generateRandomNumber(MAX_RANDOM_NUMBER);

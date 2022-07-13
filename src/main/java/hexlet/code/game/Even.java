@@ -5,12 +5,9 @@ import hexlet.code.Utils;
 
 public class Even {
     public static final int MAX_NUMBER = 89;
-
     public static void game() {
-
         String description = "Answer 'yes' if the number is even, otherwise answer 'no'.";
-
-        String[][] answerAndQuestion = new String[Engine.NUMBER_ROUNDS][Engine.AMOUNT_QUESTION];
+        String[][] answerAndQuestion = new String[Engine.NUMBER_ROUNDS][2];
 
         for (int i = 0; i < Engine.NUMBER_ROUNDS; i++) {
             answerAndQuestion[i][Engine.QUESTION_NUMBER]
@@ -18,11 +15,9 @@ public class Even {
             answerAndQuestion[i][Engine.ANSWER_NUMBER]
                     = Even.isEven(Integer.parseInt(answerAndQuestion[i][Engine.QUESTION_NUMBER]));
         }
-
         Engine.startGame(description, answerAndQuestion);
-
     }
-    static String isEven(int checkNumber) {
+    public static String isEven(int checkNumber) {
         return checkNumber % 2 == 0 ? "yes" : "no";
     }
 }

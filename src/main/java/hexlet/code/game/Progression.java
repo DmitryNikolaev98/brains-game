@@ -16,7 +16,7 @@ public class Progression {
 
         String description = "What number is missing in the progression?";
 
-        String[][] askAndQuestion = new String[Engine.NUMBER_ROUNDS][Engine.AMOUNT_QUESTION];
+        String[][] askAndQuestion = new String[Engine.NUMBER_ROUNDS][2];
 
         for (int i = 0; i < Engine.NUMBER_ROUNDS; i++) {
 

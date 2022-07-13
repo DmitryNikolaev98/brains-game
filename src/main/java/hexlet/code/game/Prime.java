@@ -11,7 +11,7 @@ public class Prime {
 
         String description = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
 
-        String[][] askAndQuestion = new String[Engine.NUMBER_ROUNDS][Engine.AMOUNT_QUESTION];
+        String[][] askAndQuestion = new String[Engine.NUMBER_ROUNDS][2];
 
         for (int i = 0; i < Engine.NUMBER_ROUNDS; i++) {
 

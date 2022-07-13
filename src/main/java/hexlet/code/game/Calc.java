@@ -8,7 +8,7 @@ import java.util.Random;
 public class Calc {
 
     public static final int MAX_RANDOM_NUMBER = 15;
-    public static String[][] askAndQuestion = new String[Engine.NUMBER_ROUNDS][Engine.AMOUNT_QUESTION];
+    public static String[][] askAndQuestion = new String[Engine.NUMBER_ROUNDS][];
 
     public static void game() {
         String description = "Welcome to the Brain Games!";

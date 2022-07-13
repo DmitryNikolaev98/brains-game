@@ -23,11 +23,11 @@ public class App {
         String number = scanner.next();
         switch (number) {
             case "1" -> Cli.greeting();
-            case "2" -> Even.evenGame();
-            case "3" -> Calc.calcGame();
-            case "4" -> Gcd.gcdGame();
-            case "5" -> Progression.progressionGame();
-            case "6" -> Prime.primeGame();
+            case "2" -> Even.game();
+            case "3" -> Calc.game();
+            case "4" -> Gcd.game();
+            case "5" -> Progression.game();
+            case "6" -> Prime.game();
             default -> System.exit(0);
         }
         scanner.close();

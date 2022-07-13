@@ -7,7 +7,7 @@ public class Gcd {
 
     public static final int MAX_RANDOM_NUMBER = 89;
 
-    public static void gcdGame() {
+    public static void game() {
 
         String description = "Find the greatest common divisor of given numbers.";
 

@@ -7,7 +7,7 @@ public class Prime {
 
     public static final int MAX_RANDOM_NUMBER = 89;
 
-    public static void primeGame() {
+    public static void game() {
 
         String description = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
 

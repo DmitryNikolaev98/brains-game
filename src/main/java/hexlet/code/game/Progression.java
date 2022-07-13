@@ -12,7 +12,7 @@ public class Progression {
     public static final int MAX_STEP = 10;
     public static final int LENGTH_PROGRESSION = 10;
 
-    public static void progressionGame() {
+    public static void game() {
 
         String description = "What number is missing in the progression?";
 

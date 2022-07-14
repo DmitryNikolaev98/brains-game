@@ -1,8 +1,8 @@
-package hexlet.code.exceptions;
-
-
-public class OperationException extends Exception {
-    public OperationException(String message) {
-        super(message);
-    }
-}
+//package hexlet.code.exceptions;
+//
+//
+//public class OperationException extends Exception {
+//    public OperationException(String message) {
+//        super(message);
+//    }
+//}

@@ -2,15 +2,14 @@ package hexlet.code.game;
 
 import hexlet.code.Engine;
 import hexlet.code.Utils;
-import hexlet.code.exceptions.OperationException;
+//import hexlet.code.exceptions.OperationException;
 
 import java.util.Random;
 
 public class Calc {
     public static final int MAX_RANDOM_NUMBER = 15;
-    public static String[][] askAndQuestion = new String[Engine.NUMBER_ROUNDS][2];
-    public static String[] operators = {"-", "+", "*", "/"};
-
+    private static final String[][] askAndQuestion = new String[Engine.NUMBER_ROUNDS][2];
+    private static final String[] operators = {"-", "+", "*", "/"};
     public static void game() {
         String description = "Welcome to the Brain Games!";
         for (int i = 0; i < Engine.NUMBER_ROUNDS; i++) {
@@ -26,7 +25,6 @@ public class Calc {
 //            } catch (OperationException e) {
 //                e.printStackTrace();
 //            }
-
         }
         Engine.startGame(description, askAndQuestion);
     }
@@ -46,7 +44,6 @@ public class Calc {
             default -> {
                return "Unsupported operation!";
             }
-
 //            default -> {
 //                    throw new OperationException("Unsupported operation");
 //            }

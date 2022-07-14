@@ -22,7 +22,7 @@ public class Engine {
 
             if (userAnswer.equals(askAndQuestion[i][Engine.ANSWER_NUMBER])) {
                 System.out.println("Correct!");
-            } else if (askAndQuestion[i][Engine.ANSWER_NUMBER].equals("Unsupported operation")) {
+            } else if (askAndQuestion[i][Engine.ANSWER_NUMBER].equals("Unsupported operation!")) {
                 System.out.println("Unsupported operation!");
             } else {
                 System.out.println("'" + userAnswer + "' is wrong answer ;(. Correct answer was "

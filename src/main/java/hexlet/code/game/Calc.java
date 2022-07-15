@@ -8,49 +8,39 @@ import java.util.Random;
 
 public class Calc {
     public static final int MAX_RANDOM_NUMBER = 15;
-    private static final String[][] ASKANDQUESTION = new String[Engine.NUMBER_ROUNDS][2];
-    private static final String[] OPERATORS = {"-", "+", "*", "/"};
+    public static final String DESCRIPTION = "What is the result of the expression?";
+    private static final String[] OPERATORS = {"-", "+", "*"};
     public static void game() {
-        String description = "Welcome to the Brain Games!";
+        String[][] askAndQuestion = new String[Engine.NUMBER_ROUNDS][2];
+
         for (int i = 0; i < Engine.NUMBER_ROUNDS; i++) {
             int expression1 = Utils.generateRandomNumber(MAX_RANDOM_NUMBER);
             int expression2 = Utils.generateRandomNumber(MAX_RANDOM_NUMBER);
             String operators = String.valueOf(Calc.generateOperator());
-            ASKANDQUESTION[i][Engine.QUESTION_NUMBER] = expression1 + " " + operators + " " + expression2;
-            ASKANDQUESTION[i][Engine.ANSWER_NUMBER] = calculate(operators, expression1, expression2);
-
-//            try {
-//                askAndQuestion[i][Engine.QUESTION_NUMBER] = expression1 + " " + operators + " " + expression2;
-//                askAndQuestion[i][Engine.ANSWER_NUMBER] = calculate(operators, expression1, expression2);
-//            } catch (OperationException e) {
-//                e.printStackTrace();
-//            }
+            askAndQuestion[i][Engine.QUESTION_NUMBER] = expression1 + " " + operators + " " + expression2;
+            askAndQuestion[i][Engine.ANSWER_NUMBER] = String.valueOf(calculate(operators, expression1, expression2));
         }
-        Engine.startGame(description, ASKANDQUESTION);
+        Engine.startGame(DESCRIPTION, askAndQuestion);
     }
-    public static String calculate(String operators, int expression1, int expression2) {
+    public static int calculate(String operators, int expression1, int expression2) {
 
         switch (operators) {
             case "+" -> {
-                return String.valueOf(expression1 + expression2);
+                return expression1 + expression2;
             }
             case "-" -> {
-                return String.valueOf(expression1 - expression2);
+                return expression1 - expression2;
             }
             case "*" -> {
-                return String.valueOf(expression1 * expression2);
+                return expression1 * expression2;
             }
             default -> {
-                return "Unsupported operation!";
+                return 0;
             }
-//          default -> {
-//              throw new OperationException("Unsupported operation");
-//          }
-
         }
     }
     public static String generateOperator() {
-        final int randomOperator = 4;
+        final int randomOperator = 3;
         Random random = new Random();
         int i = random.nextInt(randomOperator);
         return OPERATORS[i];

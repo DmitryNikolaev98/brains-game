@@ -4,15 +4,13 @@ import hexlet.code.Engine;
 import hexlet.code.Utils;
 
 import java.util.Random;
-
 public class Progression {
-
     public static final int MAX_RANDOM_NUMBER = 89;
     public static final int MIN_STEP = 2;
     public static final int MAX_STEP = 10;
     public static final int LENGTH_PROGRESSION = 10;
+    public static final String DESCRIPTION = "What number is missing in the progression?";
     public static void game() {
-        String description = "What number is missing in the progression?";
         String[][] askAndQuestion = new String[Engine.NUMBER_ROUNDS][2];
 
         for (int i = 0; i < Engine.NUMBER_ROUNDS; i++) {
@@ -31,7 +29,7 @@ public class Progression {
                 askAndQuestion[i][Engine.QUESTION_NUMBER] = rowProgression[i];
             }
         }
-        Engine.startGame(description, askAndQuestion);
+        Engine.startGame(DESCRIPTION, askAndQuestion);
     }
     public static int differanceMaxAndMin(int max, int min) {
         Random random = new Random();

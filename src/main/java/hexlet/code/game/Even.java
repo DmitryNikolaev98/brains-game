@@ -12,12 +12,12 @@ public class Even {
         for (int i = 0; i < Engine.NUMBER_ROUNDS; i++) {
             answerAndQuestion[i][Engine.QUESTION_NUMBER]
                     = String.valueOf(Utils.generateRandomNumber(MAX_NUMBER));
-            answerAndQuestion[i][Engine.ANSWER_NUMBER]
-                    = Even.isEven(Integer.parseInt(answerAndQuestion[i][Engine.QUESTION_NUMBER]));
+            boolean answer = Even.isEven(Integer.parseInt(answerAndQuestion[i][Engine.QUESTION_NUMBER]));
+            answerAndQuestion[i][Engine.ANSWER_NUMBER] = answer ? "yes" : "no";
         }
         Engine.startGame(DESCRIPTION, answerAndQuestion);
     }
-    public static String isEven(int checkNumber) {
-        return checkNumber % 2 == 0 ? "yes" : "no";
+    public static boolean isEven(int checkNumber) {
+        return checkNumber % 2 == 0;
     }
 }

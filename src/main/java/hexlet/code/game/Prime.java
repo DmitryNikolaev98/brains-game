@@ -12,12 +12,12 @@ public class Prime {
             int randomNumber = Utils.generateRandomNumber(MAX_RANDOM_NUMBER);
 
             askAndQuestion[i][Engine.QUESTION_NUMBER] = String.valueOf(randomNumber);
-            askAndQuestion[i][Engine.ANSWER_NUMBER]
-                    = isPrime(Integer.parseInt(askAndQuestion[i][Engine.QUESTION_NUMBER]));
+            boolean answer = isPrime(Integer.parseInt(askAndQuestion[i][Engine.QUESTION_NUMBER]));
+            askAndQuestion[i][Engine.ANSWER_NUMBER] = answer ? "yes" : "no";
         }
         Engine.startGame(DESCRIPTION, askAndQuestion);
     }
-    private static String isPrime(int checkNumber) {
+    private static boolean isPrime(int checkNumber) {
         boolean isPrime = true;
 
         for (int i = 2; i < checkNumber; i++) {
@@ -26,6 +26,6 @@ public class Prime {
                 break;
             }
         }
-        return isPrime ? "yes" : "no";
+        return isPrime;
     }
 }

@@ -12,12 +12,12 @@ public class Progression {
         String[][] askAndQuestion = new String[Engine.NUMBER_ROUNDS][2];
 
         for (int i = 0; i < Engine.NUMBER_ROUNDS; i++) {
-            int startProgressionGame = Utils.generateRandomNumber(MAX_RANDOM_NUMBER);
-            int stepProgressionGame = Utils.differanceMaxAndMin(MAX_STEP, MIN_STEP);
-            String[] rowNumberProgression = new String[LENGTH_PROGRESSION];
-            String[] rowProgression = {"", "", ""};
-            int hiddenNumber = Utils.generateRandomNumber(LENGTH_PROGRESSION - 1);
-            String[] numbers = new String[LENGTH_PROGRESSION];
+            int startProgressionGame = Utils.generateRandomNumber(MAX_RANDOM_NUMBER); // случайное начальное число от 1 до 90
+            int stepProgressionGame = Utils.differanceMaxAndMin(MAX_STEP, MIN_STEP);  // шаг прогрессии от 2 до 10
+            String[] rowNumberProgression = new String[LENGTH_PROGRESSION]; // массив строк длиной 0 до 9
+            String[] rowProgression = {"", "", ""}; //массив строк длиной 0 до 2
+            int hiddenNumber = Utils.generateRandomNumber(LENGTH_PROGRESSION - 1);  // случайное число от 0 до 8
+            String[] numbers = new String[LENGTH_PROGRESSION]; // массив строк длиной 0 до 9
 
             for (int j = 0; j < LENGTH_PROGRESSION; j++) {
                 numbers[j] = String.valueOf(startProgressionGame + (j * stepProgressionGame));
@@ -29,5 +29,4 @@ public class Progression {
         }
         Engine.startGame(DESCRIPTION, askAndQuestion);
     }
-
 }

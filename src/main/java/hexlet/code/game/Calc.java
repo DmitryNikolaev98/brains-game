@@ -9,7 +9,7 @@ import java.util.Random;
 public class Calc {
     public static final int MAX_RANDOM_NUMBER = 15;
     public static final String DESCRIPTION = "What is the result of the expression?";
-    private static final String[] OPERATORS = {"-", "+", "*"};
+    private static final String[] OPERATORS = {"+", "*", "-"};
     public static void game() {
         String[][] askAndQuestion = new String[Engine.NUMBER_ROUNDS][2];
 
@@ -34,9 +34,7 @@ public class Calc {
             case "*" -> {
                 return expression1 * expression2;
             }
-            default -> {
-                return 0;
-            }
+            default -> throw new RuntimeException ("Unsupported operation! " + operators);
         }
     }
     public static String generateOperator() {

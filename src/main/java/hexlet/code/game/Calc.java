@@ -34,7 +34,7 @@ public class Calc {
             case "*" -> {
                 return expression1 * expression2;
             }
-            default -> throw new RuntimeException ("Unsupported operation! " + operators);
+            default -> throw new RuntimeException("Unsupported operation! " + operators);
         }
     }
     public static String generateOperator() {

@@ -14,34 +14,19 @@ public class Progression {
         for (int i = 0; i < Engine.NUMBER_ROUNDS; i++) {
             int startProgressionGame = Utils.generateRandomNumber(MAX_RANDOM_NUMBER);
             int stepProgressionGame = Utils.differanceMaxAndMin(MAX_STEP, MIN_STEP);
-            int hiddenNumber = Utils.generateRandomNumber(LENGTH_PROGRESSION - 1);
             String[] rowNumberProgression = new String[LENGTH_PROGRESSION];
             String[] rowProgression = {"", "", ""};
-            String[] numbers = generateProgression(startProgressionGame, stepProgressionGame);
+            int hiddenNumber = Utils.generateRandomNumber(LENGTH_PROGRESSION - 1);
+            String[] numbers = new String[LENGTH_PROGRESSION];
 
             for (int j = 0; j < LENGTH_PROGRESSION; j++) {
-                var result = new StringBuilder();
-
-                if (j == hiddenNumber) {
-                    result.append(".. ");
-                } else {
-                    result.append(numbers[j]).append(" ");
-                }
-                rowNumberProgression[j] = String.valueOf(result);
+                numbers[j] = String.valueOf(startProgressionGame + (j * stepProgressionGame));
+                rowNumberProgression[j] = (j == hiddenNumber) ? ".. " : ((numbers[j]) + " ");
                 rowProgression[i] += rowNumberProgression[j];
+                askAndQuestion[i][Engine.ANSWER_NUMBER] = String.valueOf(numbers[hiddenNumber]);
+                askAndQuestion[i][Engine.QUESTION_NUMBER] = rowProgression[i];
             }
-
-            askAndQuestion[i][Engine.ANSWER_NUMBER] = String.valueOf(numbers[hiddenNumber]);
-            askAndQuestion[i][Engine.QUESTION_NUMBER] = rowProgression[i];
         }
         Engine.startGame(DESCRIPTION, askAndQuestion);
-    }
-    public static String[] generateProgression(int startProgressionGame, int stepProgressionGame) {
-        String[] progression = new String[LENGTH_PROGRESSION];
-
-        for (int j = 0; j < LENGTH_PROGRESSION; j++) {
-            progression[j] = String.valueOf(startProgressionGame + (j * stepProgressionGame));
-        }
-        return progression;
     }
 }

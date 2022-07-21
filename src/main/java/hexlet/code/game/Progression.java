@@ -30,7 +30,6 @@ public class Progression {
                 rowNumberProgression[j] = String.valueOf(result);
                 rowProgression[i] += rowNumberProgression[j];
             }
-
             askAndQuestion[i][Engine.ANSWER_NUMBER] = String.valueOf(numbers[hiddenNumber]);
             askAndQuestion[i][Engine.QUESTION_NUMBER] = rowProgression[i];
         }

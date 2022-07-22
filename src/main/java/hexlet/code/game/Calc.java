@@ -38,7 +38,7 @@ public class Calc {
         }
     }
     public static String generateOperator() {
-        final int randomOperator = 3;
+        final int randomOperator = OPERATORS.length;
         Random random = new Random();
         int i = random.nextInt(randomOperator);
         return OPERATORS[i];

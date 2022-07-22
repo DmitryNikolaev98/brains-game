@@ -17,7 +17,7 @@ public class Progression {
             int hiddenNumber = Utils.generateRandomNumber(LENGTH_PROGRESSION - 1);
             String[] rowNumberProgression = new String[LENGTH_PROGRESSION];
             String[] rowProgression = {"", "", ""};
-            String[] numbers = generateProgression(startProgressionGame, stepProgressionGame);
+            String[] numbers = generateProgression(startProgressionGame, stepProgressionGame, LENGTH_PROGRESSION);
 
             for (int j = 0; j < LENGTH_PROGRESSION; j++) {
                 var result = new StringBuilder();
@@ -35,10 +35,10 @@ public class Progression {
         }
         Engine.startGame(DESCRIPTION, askAndQuestion);
     }
-    public static String[] generateProgression(int startProgressionGame, int stepProgressionGame) {
+    public static String[] generateProgression(int startProgressionGame, int stepProgressionGame, int lengthProgression) {
         String[] progression = new String[LENGTH_PROGRESSION];
 
-        for (int j = 0; j < LENGTH_PROGRESSION; j++) {
+        for (int j = 0; j < lengthProgression; j++) {
             progression[j] = String.valueOf(startProgressionGame + (j * stepProgressionGame));
         }
         return progression;

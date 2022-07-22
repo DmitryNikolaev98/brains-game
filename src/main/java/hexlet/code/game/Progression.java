@@ -36,7 +36,7 @@ public class Progression {
         Engine.startGame(DESCRIPTION, askAndQuestion);
     }
     public static String[] generateProgression(int startProgressionGame, int stepProgressionGame, int lengthProgression) {
-        String[] progression = new String[LENGTH_PROGRESSION];
+        String[] progression = new String[lengthProgression];
 
         for (int j = 0; j < lengthProgression; j++) {
             progression[j] = String.valueOf(startProgressionGame + (j * stepProgressionGame));

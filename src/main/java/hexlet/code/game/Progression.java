@@ -35,10 +35,10 @@ public class Progression {
         }
         Engine.startGame(DESCRIPTION, askAndQuestion);
     }
-    public static String[] generateProgression(int startProgressionGame, int stepProgressionGame, int lengthProgression) {
-        String[] progression = new String[lengthProgression];
+    public static String[] generateProgression(int startProgressionGame, int stepProgressionGame, int length) {
+        String[] progression = new String[length];
 
-        for (int j = 0; j < lengthProgression; j++) {
+        for (int j = 0; j < length; j++) {
             progression[j] = String.valueOf(startProgressionGame + (j * stepProgressionGame));
         }
         return progression;
